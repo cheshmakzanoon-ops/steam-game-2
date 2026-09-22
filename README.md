@@ -6,9 +6,9 @@ Compact one-board kingdom/base-building strategy roguelite for Steam.
 
 ## Production status
 
-**Current gate:** Phase 002 — Originality boundary and IP safety — COMPLETE
+**Current gate:** Phase 003 — Player promise and emotional arc — COMPLETE
 
-Phase 001 fixed the product charter and scope ceiling. Phase 002 fixes how the project remains structurally, visually, legally, and commercially distinct from its references.
+Phases 001–002 lock the product/scope and originality/IP boundaries. Phase 003 now locks what the player must understand, feel, decide, and be able to explain across a complete run.
 
 ### Phase 001 documents
 
@@ -30,6 +30,15 @@ Phase 001 fixed the product charter and scope ceiling. Phase 002 fixes how the p
 - [Visual Reference Board](docs/phase-002/visual_reference_board.svg)
 - [Milestone Originality Gate](docs/phase-002/ORIGINALITY_REVIEW_GATE.md)
 - [Closure Evidence](docs/phase-002/CLOSURE_EVIDENCE.md)
+
+### Phase 003 documents
+
+- [Player Experience Map](docs/phase-003/PLAYER_EXPERIENCE_MAP.md)
+- [15-Watch Emotional Pacing Chart](docs/phase-003/EMOTIONAL_PACING_CHART.md)
+- [Fair-Loss Rubric](docs/phase-003/FAIR_LOSS_RUBRIC.md)
+- [Player Stories and Design Requirements](docs/phase-003/PLAYER_STORIES.md)
+- [Phase 003 Acceptance Matrix](docs/phase-003/ACCEPTANCE_MATRIX.md)
+- [Closure Evidence](docs/phase-003/CLOSURE_EVIDENCE.md)
 
 The project follows the authoritative **STEAM GAME NUMBER 2 — Master Production Prompt and Project Bible** in mandatory phase order. A later phase may not silently widen scope or weaken a prior gate.
 
