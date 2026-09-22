@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(22)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#302d2a" stroke-width="3" opacity="0.75"/>
+    </pattern>
+    <pattern id="fiber" width="48" height="24" patternUnits="userSpaceOnUse">
+      <path d="M2 7 C14 2, 30 12, 46 5 M0 18 C18 13, 32 24, 49 16" fill="none" stroke="#7d725e" stroke-width="1" opacity="0.22"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="5" dy="7" stdDeviation="3" flood-color="#302d2a" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" fill="#d8ccb0"/>
+  <rect x="20" y="20" width="1360" height="860" rx="18" fill="#e9ddc0" stroke="#302d2a" stroke-width="5"/>
+  <rect x="35" y="35" width="1330" height="830" fill="url(#fiber)" opacity="0.8"/>
+
+  <text x="70" y="88" font-family="serif" font-size="34" font-weight="700" fill="#302d2a">SIGNALHOLD — ORIGINAL VISUAL GRAMMAR BOARD</text>
+  <text x="70" y="120" font-family="sans-serif" font-size="16" fill="#5b554a">Phase 002 exploratory reference • abstract materials and mark-making only • not final art</text>
+
+  <g transform="translate(70,160)">
+    <text x="0" y="0" font-family="sans-serif" font-size="18" font-weight="700" fill="#302d2a">FUNCTIONAL INKS</text>
+    <g transform="translate(0,25)">
+      <rect x="0" y="0" width="150" height="78" rx="8" fill="#302d2a"/><text x="12" y="101" font-family="sans-serif" font-size="14" fill="#302d2a">Charcoal ink</text>
+      <rect x="175" y="0" width="150" height="78" rx="8" fill="#b89a4f"/><text x="187" y="101" font-family="sans-serif" font-size="14" fill="#302d2a">Command gold</text>
+      <rect x="350" y="0" width="150" height="78" rx="8" fill="#617b58"/><text x="362" y="101" font-family="sans-serif" font-size="14" fill="#302d2a">Supply green</text>
+      <rect x="525" y="0" width="150" height="78" rx="8" fill="#a85f38"/><text x="537" y="101" font-family="sans-serif" font-size="14" fill="#302d2a">Material rust</text>
+      <rect x="700" y="0" width="150" height="78" rx="8" fill="#665b91"/><text x="712" y="101" font-family="sans-serif" font-size="14" fill="#302d2a">Insight violet</text>
+      <rect x="875" y="0" width="150" height="78" rx="8" fill="#b83d2f"/><text x="887" y="101" font-family="sans-serif" font-size="14" fill="#302d2a">Danger vermilion</text>
+      <rect x="1050" y="0" width="150" height="78" rx="8" fill="#172126"/><rect x="1060" y="10" width="130" height="58" rx="5" fill="none" stroke="#b8dfe2" stroke-width="4"/><text x="1062" y="101" font-family="sans-serif" font-size="14" fill="#302d2a">Hush + cyan edge</text>
+    </g>
+  </g>
+
+  <g transform="translate(70,330)">
+    <text x="0" y="0" font-family="sans-serif" font-size="18" font-weight="700" fill="#302d2a">MATERIAL / PRINT LANGUAGE</text>
+
+    <g transform="translate(0,28)" filter="url(#shadow)">
+      <rect x="0" y="0" width="245" height="190" rx="10" fill="#e5d8b9" stroke="#302d2a" stroke-width="3"/>
+      <rect x="16" y="18" width="213" height="120" fill="url(#fiber)"/>
+      <path d="M24 154 C70 141, 117 164, 210 147" fill="none" stroke="#8d8068" stroke-width="3" stroke-dasharray="2 8"/>
+      <text x="18" y="178" font-family="sans-serif" font-size="16" fill="#302d2a">Rag paper / deckled edge</text>
+    </g>
+
+    <g transform="translate(275,28)" filter="url(#shadow)">
+      <rect x="0" y="0" width="245" height="190" rx="10" fill="#d8ccb0" stroke="#302d2a" stroke-width="3"/>
+      <path d="M28 140 L85 45 L120 125 L168 62 L216 142 Z" fill="url(#hatch)" stroke="#302d2a" stroke-width="7"/>
+      <text x="18" y="178" font-family="sans-serif" font-size="16" fill="#302d2a">Woodcut silhouette / hatch</text>
+    </g>
+
+    <g transform="translate(550,28)" filter="url(#shadow)">
+      <rect x="0" y="0" width="245" height="190" rx="10" fill="#e8ddc1" stroke="#302d2a" stroke-width="3"/>
+      <circle cx="106" cy="86" r="52" fill="#a85f38" opacity="0.90"/>
+      <circle cx="118" cy="81" r="52" fill="#665b91" opacity="0.65"/>
+      <path d="M44 139 H203" stroke="#302d2a" stroke-width="6"/>
+      <text x="18" y="178" font-family="sans-serif" font-size="16" fill="#302d2a">Screen-print misregistration</text>
+    </g>
+
+    <g transform="translate(825,28)" filter="url(#shadow)">
+      <rect x="0" y="0" width="245" height="190" rx="10" fill="#e5d8b9" stroke="#302d2a" stroke-width="3"/>
+      <path d="M40 142 V65 L120 28 L205 68 V143 Z" fill="#c9b98f" stroke="#302d2a" stroke-width="4"/>
+      <path d="M58 132 V77 L121 48 L188 79 V132 Z" fill="#a85f38" stroke="#302d2a" stroke-width="4"/>
+      <path d="M83 126 V90 L121 70 L163 91 V126 Z" fill="#617b58" stroke="#302d2a" stroke-width="4"/>
+      <text x="18" y="178" font-family="sans-serif" font-size="16" fill="#302d2a">Layered paper relief</text>
+    </g>
+
+    <g transform="translate(1100,28)" filter="url(#shadow)">
+      <rect x="0" y="0" width="190" height="190" rx="10" fill="#e5d8b9" stroke="#302d2a" stroke-width="3"/>
+      <circle cx="63" cy="82" r="28" fill="#8d2f2b" stroke="#302d2a" stroke-width="3"/>
+      <path d="M110 35 C132 55, 117 88, 151 107 C166 116, 162 143, 137 151" fill="none" stroke="#b89a4f" stroke-width="8"/>
+      <circle cx="110" cy="35" r="7" fill="#d8ccb0" stroke="#302d2a" stroke-width="2"/>
+      <text x="18" y="178" font-family="sans-serif" font-size="16" fill="#302d2a">Wax / thread / fastener</text>
+    </g>
+  </g>
+
+  <g transform="translate(70,585)">
+    <text x="0" y="0" font-family="sans-serif" font-size="18" font-weight="700" fill="#302d2a">COMMAND-NETWORK MOTIF</text>
+    <rect x="0" y="25" width="1290" height="215" rx="12" fill="#d9cba8" stroke="#302d2a" stroke-width="3"/>
+    <g stroke="#b89a4f" stroke-width="10" fill="none">
+      <path d="M110 130 H310 V85 H515 V155 H720 V78 H930 V140 H1165"/>
+      <path d="M515 155 V205 H720"/>
+    </g>
+    <g fill="#e9ddc0" stroke="#302d2a" stroke-width="5">
+      <rect x="75" y="92" width="70" height="70" rx="8"/>
+      <rect x="275" y="52" width="70" height="70" rx="8"/>
+      <rect x="480" y="118" width="70" height="70" rx="8"/>
+      <rect x="685" y="43" width="70" height="70" rx="8"/>
+      <rect x="895" y="104" width="70" height="70" rx="8"/>
+      <rect x="1130" y="92" width="70" height="70" rx="8"/>
+    </g>
+    <g fill="#302d2a">
+      <circle cx="110" cy="127" r="10"/><circle cx="310" cy="87" r="10"/><circle cx="515" cy="153" r="10"/>
+      <circle cx="720" cy="78" r="10"/><circle cx="930" cy="139" r="10"/><circle cx="1165" cy="127" r="10"/>
+    </g>
+    <g font-family="sans-serif" font-size="14" fill="#302d2a">
+      <text x="81" y="184">KEEP</text><text x="268" y="145">PORT</text><text x="468" y="211">SWITCH</text>
+      <text x="672" y="137">RELAY</text><text x="884" y="197">LOAD</text><text x="1115" y="184">DEFENSE</text>
+    </g>
+    <text x="820" y="218" font-family="sans-serif" font-size="13" fill="#5b554a">Topology first. Decoration second. State must remain readable without color alone.</text>
+  </g>
+</svg>

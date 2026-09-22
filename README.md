@@ -2,11 +2,13 @@
 
 Compact one-board kingdom/base-building strategy roguelite for Steam.
 
+> **Naming status:** "Signalhold: The Last Relay" is a WORKING TITLE, not a trademark-cleared shipping name. Phase 002 identified an existing UK "Signalhold" trademark application in software-related classes. No Steam page, capsule art, press release, paid campaign, or final logo may present this name as cleared until the naming gate passes.
+
 ## Production status
 
-**Current gate:** Phase 001 — Research traceability and project charter — COMPLETE
+**Current gate:** Phase 002 — Originality boundary and IP safety — COMPLETE
 
-Phase 001 establishes the product contract before gameplay or final-art production begins.
+Phase 001 fixed the product charter and scope ceiling. Phase 002 now fixes how the project remains structurally, visually, legally, and commercially distinct from its references.
 
 ### Phase 001 documents
 
@@ -14,12 +16,25 @@ Phase 001 establishes the product contract before gameplay or final-art producti
 - [Research Traceability](docs/phase-001/RESEARCH_TRACEABILITY.md)
 - [Risk Register](docs/phase-001/RISK_REGISTER.md)
 - [Approved Scope](docs/phase-001/APPROVED_SCOPE.md)
+- [Closure Evidence](docs/phase-001/CLOSURE_EVIDENCE.md)
 
-The project follows the authoritative **STEAM GAME NUMBER 2 — Master Production Prompt and Project Bible** in mandatory phase order. Later phases may not silently widen the scope or invalidate prior gates.
+### Phase 002 documents
+
+- [Originality Brief](docs/phase-002/ORIGINALITY_BRIEF.md)
+- [IP Checklist](docs/phase-002/IP_CHECKLIST.md)
+- [Naming Validation Plan](docs/phase-002/NAMING_VALIDATION_PLAN.md)
+- [Third-Party Licensing Policy](docs/phase-002/THIRD_PARTY_LICENSING_POLICY.md)
+- [Licensing Register Template](docs/phase-002/LICENSING_REGISTER.csv)
+- [Visual Reference Board Notes](docs/phase-002/VISUAL_REFERENCE_BOARD.md)
+- [Visual Reference Board](docs/phase-002/visual_reference_board.svg)
+- [Milestone Originality Gate](docs/phase-002/ORIGINALITY_REVIEW_GATE.md)
+- [Closure Evidence](docs/phase-002/CLOSURE_EVIDENCE.md)
+
+The project follows the authoritative **STEAM GAME NUMBER 2 — Master Production Prompt and Project Bible** in mandatory phase order. A later phase may not silently widen scope or weaken a prior gate.
 
 ## Locked project identity
 
-- **Working title:** Signalhold: The Last Relay
+- **Working title:** Signalhold: The Last Relay — provisional / not trademark-cleared
 - **Genre:** compact one-board kingdom/base-building strategy roguelite
 - **Core promise:** You can see every major threat coming, but your command network can never power everything at once.
 - **Primary platform:** Steam for Windows; Linux and Steam Deck verification before launch
