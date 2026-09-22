@@ -1,6 +1,6 @@
 # Phase 001 — Product Charter
 
-**Project:** Signalhold: The Last Relay  
+**Project:** Charterwake: The Last Relay  
 **Phase:** 001 — Research traceability and project charter  
 **Status:** APPROVED BASELINE  
 **Date:** 2026-09-22  
@@ -14,7 +14,7 @@
 
 ## 1. Product decision
 
-Signalhold is a compact one-board kingdom/base-building strategy roguelite in which the player builds a tiny frontier kingdom on a **9×9 charter board** and routes a visible command network through buildings with directional signal ports.
+Charterwake is a compact one-board kingdom/base-building strategy roguelite in which the player builds a tiny frontier kingdom on a **9×9 charter board** and routes a visible command network through buildings with directional signal ports.
 
 The player never has enough Command to power every desirable structure simultaneously. Planning therefore centers on **what receives authority now**, rather than on repetitive worker control or unit micromanagement. Threats are substantially telegraphed before commitment. Powered economy and defenses then resolve automatically and deterministically enough that the player can understand why a plan succeeded or failed.
 
@@ -204,7 +204,7 @@ Depth must come from interactions among a deliberately limited set of readable s
 
 ### Prohibited copying
 
-Comparables are evidence and design references, not templates. Signalhold must not copy names, layouts, icons, progression structures, resource sets, signature activation shapes, exact mechanics, or marketing language.
+Comparables are evidence and design references, not templates. Charterwake must not copy names, layouts, icons, progression structures, resource sets, signature activation shapes, exact mechanics, or marketing language.
 
 The command network must be visibly original: ports, relays, loops, switchgates, Load, priorities, cut points, and physical routing.
 

@@ -112,7 +112,7 @@ Phase 001 documents remain intact. No gameplay code, saves, imports, engine asse
 
 ## 7. Known non-blocking issue
 
-The working title has an unresolved trademark-risk signal. This does not prevent internal preproduction from continuing because the project architecture is required to remain rename-safe. It **does** block treating the current title as legally/publicly cleared.
+The former working title **Signalhold: The Last Relay** was retired after the documented trademark-risk signal. The replacement working title **Charterwake: The Last Relay** has passed only a preliminary public-web collision screen and therefore remains **AMBER / provisional** pending the full naming-validation gate.
 
 ## 8. Safe entry condition for Phase 003
 
@@ -120,10 +120,17 @@ Phase 003 may begin from this main baseline if it:
 
 1. preserves the Phase 001 product pillars and scope ceiling;
 2. obeys Phase 002 originality/IP gates;
-3. treats Signalhold as a provisional internal title;
+3. treats Charterwake as a provisional internal title;
 4. adds no copied reference-game vocabulary/layout/art;
 5. registers any new third-party production dependency;
 6. produces the Phase 003 player-experience map, emotional pacing chart, fair-loss rubric and player-story set;
 7. closes green before Phase 004 is claimed.
 
 **Phase 002 is closed.**
+
+
+## 9. Post-closure naming change — 2026-09-22
+
+After Phase 002 closed, the project owner requested a new name. The active working title changed from **Signalhold: The Last Relay** to **Charterwake: The Last Relay**.
+
+This post-closure change does not reopen the Phase 002 originality/IP gate because it follows the naming-control process created by that phase. The former name and its UK application record remain in this evidence file as historical provenance. The replacement name is not represented as trademark-cleared.

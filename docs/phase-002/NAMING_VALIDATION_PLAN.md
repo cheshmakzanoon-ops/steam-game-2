@@ -1,141 +1,85 @@
 # Phase 002 — Naming and Trademark Validation Plan
 
-**Working title:** Signalhold: The Last Relay  
-**Current status:** RED / PROVISIONAL — DO NOT TREAT AS CLEARED  
+**Current working title:** Charterwake: The Last Relay  
+**Current status:** AMBER / PROVISIONAL — INITIAL SCREEN ONLY  
+**Former working title:** Signalhold: The Last Relay — RETIRED  
 **Date:** 2026-09-22
 
 This plan is a screening and production-control procedure, not legal advice.
 
 ---
 
-## 1. Immediate finding
+## 1. Rename decision
 
-A preliminary public search found:
+The former working title **Signalhold: The Last Relay** was retired after Phase 002 identified a UK application for the identical word **SIGNALHOLD**:
 
-**SIGNALHOLD**  
-UK application: **UK00004235663**  
-Filed: **2025-07-17**  
-Published in UK Trade Mark Journal 2025/031 on 2025-08-01  
-Classes shown: **9, 41, 42**  
-Applicant shown: **Calum Armour**
+- UK application: **UK00004235663**
+- filed: **2025-07-17**
+- published: **2025-08-01**
+- classes shown: **9, 41, 42**
+- software-related goods/services are present in the journal entry
 
-The journal lists software-related goods/services, including AI software and software-design services.
-
-Official record:
+Official historical record:
 https://www.ipo.gov.uk/t-tmj/tm-journals/2025-031/UK00004235663.html
 
-This does **not** establish infringement or unavailability for a videogame. It does establish enough uncertainty that the project must not spend heavily or publish publicly under the assumption that "Signalhold" is safe.
+The replacement working title is:
+
+> **Charterwake: The Last Relay**
+
+A preliminary public-web screen on 2026-09-22 searched the exact term and obvious software/game/trademark variants. It did not surface an obvious exact public game/software collision in those searches.
+
+That result is **not formal clearance**. Search engines are incomplete, trademark rights can exist without appearing in a general web search, and similarity analysis is broader than exact-word matching.
 
 ---
 
-## 2. Freeze caused by the finding
+## 2. Current production rule
 
-Until the naming gate passes:
+Until the final naming gate passes:
 
-- title remains a working title in internal/repository materials;
-- do not lock a final logo;
-- do not publish a Steam store page;
-- do not commission expensive title-dependent capsule art;
-- do not print merchandise;
-- do not announce the title as trademark-cleared;
-- do not file a trademark application without a fuller search/strategy;
-- do not acquire a large bundle of title-specific domains/handles as irreversible sunk cost.
+- Charterwake is a working title, not a cleared trademark;
+- do not claim the title is legally cleared;
+- do not lock irreversible title-dependent branding;
+- do not publish a Steam page under the assumption that clearance is complete;
+- do not make a trademark filing without a fuller search/strategy;
+- architecture and save/content IDs must stay independent of the marketing title.
 
-Gameplay/system development may continue using an internal project identifier because a name change must not affect architecture.
+Internal development may proceed under **Charterwake**.
 
 ---
 
 ## 3. Candidate search procedure
 
-For each candidate title, search:
+For the current candidate, search exact forms:
 
-### Exact forms
-
-- SIGNALHOLD
-- SIGNAL HOLD
-- SIGNAL-HOLD
-- SIGNALHOLD: THE LAST RELAY
+- CHARTERWAKE
+- CHARTER WAKE
+- CHARTER-WAKE
+- CHARTERWAKE: THE LAST RELAY
 - THE LAST RELAY
 
-### Fuzzy/semantic forms
+Also search likely phonetic, spelling, spacing, suffix/prefix and meaning-adjacent variants.
 
-Search likely phonetic, spacing, plural, suffix/prefix and concept-adjacent variants. Record why a variant was considered.
-
-### Goods/services
-
-Do not search by word alone. Review identical/similar marks in goods/services plausibly relevant to:
-
-- downloadable computer/video-game software;
-- computer software;
-- entertainment/game services;
-- online game-related services if later added;
-- publishing/media services if relevant to the commercial plan.
-
-Exact Nice classification and filing language must be confirmed at filing time; do not treat this document as classification advice.
+Review identical/similar marks in goods/services plausibly relevant to downloadable computer/video-game software, computer software, entertainment/game services, online game services if later added, and publishing/media services where commercially relevant.
 
 ---
 
-## 4. Official databases to search
+## 4. Official databases to search before title lock
 
-At minimum:
+- Canada — CIPO: https://ised-isde.canada.ca/cipo/trademark-search/
+- United States — USPTO: https://www.uspto.gov/trademarks/search
+- United Kingdom — UK IPO: https://www.gov.uk/search-for-trademark
+- European Union — EUIPO/TMview: https://www.euipo.europa.eu/en/search-ip
+- International — WIPO Global Brand Database: https://www.wipo.int/en/web/global-brand-database
 
-### Canada — CIPO
-
-Canadian Trademarks Database:
-https://ised-isde.canada.ca/cipo/trademark-search/
-
-CIPO recommends using the "trademark lookup" field for a trademark-name search and supports Boolean operators/wildcards.
-
-### United States — USPTO
-
-Trademark Search:
-https://www.uspto.gov/trademarks/search
-
-Perform comprehensive clearance-style searches for identical and similar marks, not only exact matches.
-
-### United Kingdom — UK IPO
-
-Search for a trade mark:
-https://www.gov.uk/search-for-trademark
-
-The current "Signalhold" finding makes UK review mandatory.
-
-### European Union — EUIPO / TMview
-
-Search tools:
-https://www.euipo.europa.eu/en/search-ip
-
-Availability guidance:
-https://www.euipo.europa.eu/en/trade-marks/before-applying/availability
-
-### International — WIPO
-
-Global Brand Database:
-https://www.wipo.int/en/web/global-brand-database
-
-WIPO itself notes that its global database does not replace searches of relevant national/regional registers.
+Global searches do not replace relevant national/regional searches.
 
 ---
 
 ## 5. Common-law and market search
 
-Official registrations are not the entire risk picture. Also search:
+Also search Steam, itch.io, GOG, Epic Games Store, relevant console/mobile stores, general web, game databases/press, GitHub/GitLab names, company registries, domains, major social handles and crowdfunding platforms.
 
-- Steam;
-- itch.io;
-- GOG;
-- Epic Games Store;
-- PlayStation/Xbox/Nintendo store results as appropriate;
-- App Store / Google Play if relevant;
-- general web search;
-- game press/database sites;
-- GitHub/GitLab package/project names;
-- company/business registries;
-- domains;
-- major social handles;
-- Kickstarter/BackerKit/Patreon where relevant.
-
-Record exact queries, date, URL and result summary.
+Record exact queries, dates, URLs and result summaries.
 
 ---
 
@@ -143,59 +87,34 @@ Record exact queries, date, URL and result summary.
 
 ### GREEN
 
-No material identical/similar result found after documented searches, and no counsel/owner concern remains.
-
-Green does **not** mean guaranteed legal safety.
+No material identical/similar result found after the complete documented search and no owner/counsel concern remains. Green is still not a guarantee of legal safety.
 
 ### AMBER
 
-Potentially similar mark/name exists but differs in territory, goods/services, status, commercial field or overall impression. Requires written review before public use.
+Potential uncertainty remains, or only a preliminary/general search has been completed.
+
+**Charterwake is currently AMBER.**
 
 ### RED
 
-Identical or materially similar mark/name in overlapping software/game/entertainment space, credible earlier commercial use, active dispute, or other conflict that makes launch under the name imprudent without qualified advice.
+Identical or materially similar earlier mark/use in overlapping software/game/entertainment fields, an active dispute, or other conflict that makes public use imprudent without qualified advice.
 
-Current "Signalhold" status: **RED / provisional** because an identical UK software-related application exists and has not been resolved in this project.
+**Signalhold is retired after a RED-level preliminary risk signal.**
 
 ---
 
 ## 7. Required evidence packet per finalist
 
-Create a dated folder/report containing:
-
-- candidate;
-- exact/fuzzy variants;
-- CIPO result summary;
-- USPTO result summary;
-- UK IPO result summary;
-- EUIPO/TMview result summary;
-- WIPO result summary;
-- storefront/common-law result summary;
-- company/domain/social result summary;
-- screenshots or stable URLs where legally/technically appropriate;
-- relevant goods/services;
-- status/owner/date of concerning records;
-- risk classification;
-- owner disposition;
-- legal-review note if obtained.
+Record the candidate, exact/fuzzy variants, CIPO/USPTO/UK IPO/EUIPO/WIPO results, storefront/common-law results, company/domain/social results, relevant goods/services, concerning records, risk classification, owner disposition and any legal-review note.
 
 ---
 
 ## 8. Final naming gate
 
-A public shipping/store name is not approved until:
-
-1. the evidence packet is complete;
-2. no unexplained RED result remains;
-3. AMBER results have written disposition;
-4. the project owner explicitly accepts the name;
-5. qualified trademark counsel is consulted if the result set is materially ambiguous or if a filing/public campaign justifies it;
-6. logo/key-art production is then updated to the approved name.
+A public shipping/store name is not approved until the evidence packet is complete, no unexplained RED result remains, AMBER results have written disposition, the project owner accepts the name, and qualified trademark counsel is consulted if ambiguity or commercial commitment warrants it.
 
 ---
 
 ## 9. Rename resilience
 
-The code/data architecture must not hard-code the marketing title into gameplay identifiers.
-
-Use stable internal IDs for saves/content. A title rename must require changing presentation/store metadata, not migrating the simulation.
+The marketing title must never be an authoritative gameplay/content identifier. Stable internal IDs own saves, content and simulation state.

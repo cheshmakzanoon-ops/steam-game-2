@@ -4,7 +4,7 @@
 **Status:** APPROVED EXPLORATORY GRAMMAR — NOT FINAL ART  
 **Date:** 2026-09-22
 
-The SVG committed beside this file is an **original abstract reference board** constructed for Signalhold. It contains no competitor screenshots and no copied contemporary artwork.
+The SVG committed beside this file is an **original abstract reference board** constructed for Charterwake. It contains no competitor screenshots and no copied contemporary artwork.
 
 Its purpose is to establish material and mark-making directions broad enough to be original while concrete enough to constrain later Blender and UI work.
 

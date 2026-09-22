@@ -1,17 +1,17 @@
 # Phase 002 — Originality Brief
 
-**Project:** Signalhold: The Last Relay  
+**Project:** Charterwake: The Last Relay  
 **Status:** APPROVED ORIGINALITY BASELINE  
 **Date:** 2026-09-22  
 **Title status:** WORKING TITLE ONLY — trademark clearance incomplete
 
-This brief defines the structural and visual distance Signalhold must maintain from every reference game. It is a production constraint, not a marketing comparison sheet.
+This brief defines the structural and visual distance Charterwake must maintain from every reference game. It is a production constraint, not a marketing comparison sheet.
 
 ---
 
 ## 1. Originality thesis
 
-Signalhold is not "another compact kingdom game with a different activation gimmick."
+Charterwake is not "another compact kingdom game with a different activation gimmick."
 
 Its strategic object is a **player-built physical command graph**:
 
@@ -37,7 +37,7 @@ No reference game in the comparison set may become the template for board layout
 
 ## 2. Major reference-to-original mapping
 
-| Reference pattern | What is useful | Signalhold's original alternative | Hard prohibition |
+| Reference pattern | What is useful | Charterwake's original alternative | Hard prohibition |
 |---|---|---|---|
 | **9 Kings** — compact grid, adjacency, escalating combos, autobattle | Readable board and spectacular systemic payoff | Persistent 9×9 charter board whose synergy is governed by signal topology, Load, priorities, switches, relays, cut points, and forecast pressure | Do not reproduce its drafting structure, spell/unit framing, exact adjacency grammar, board composition, progression cadence, icons, names, or "break the game" marketing phrasing |
 | **The King is Watching** — attention scarcity activating parts of a kingdom | Tension from not being able to operate everything simultaneously | Authority flows through a constructed graph; power is assigned by network connectivity + explicit priority, not by moving an activation window | No gaze rectangle, movable viewing/activation zone, copied kingdom layout, copied resources, copied progression, or similar pixel-medieval presentation |
@@ -127,11 +127,11 @@ Do not reproduce:
 - its HUD silhouette;
 - its store screenshot composition.
 
-Layout decisions must be derived from Signalhold's state hierarchy and accessibility requirements.
+Layout decisions must be derived from Charterwake's state hierarchy and accessibility requirements.
 
 ### Icons
 
-Every icon family must originate from Signalhold's own semantic vocabulary: charter marks, ports, relay knots, seals, ledgers, watch signs, threat marks and material symbols.
+Every icon family must originate from Charterwake's own semantic vocabulary: charter marks, ports, relay knots, seals, ledgers, watch signs, threat marks and material symbols.
 
 Tracing, redrawing, recoloring or "simplifying" a competitor icon is still copying and is prohibited.
 
@@ -214,17 +214,26 @@ Comparables may appear in private research and clearly factual press conversatio
 
 ---
 
-## 7. Naming risk discovered in Phase 002
+## 7. Naming history and current title status
 
-A preliminary public-web screen on 2026-09-22 found a UK trademark application for **Signalhold**, application **UK00004235663**, filed 2025-07-17, covering classes 9, 41 and 42, including AI software, online digital publishing services and software-design services.
+Phase 002 originally identified a material risk in the former working title **Signalhold: The Last Relay**: a preliminary public screen found UK application **UK00004235663** for **SIGNALHOLD**, filed 2025-07-17 in classes 9, 41 and 42 with software-related goods/services.
 
-This is **not a legal conclusion** about whether a game could use or register the name. It is enough to make one production decision:
+That former title is now **RETIRED**.
 
-> **"Signalhold: The Last Relay" remains a provisional working title and MUST NOT be treated as cleared.**
+The current working title is:
 
-No final logo lock, Steam store publication, paid key art, press release, trademark filing, domain campaign or merchandise may depend on this name until the naming-validation gate is completed and the owner accepts the result, with qualified legal advice where warranted.
+> **Charterwake: The Last Relay**
 
-Official UK journal record:
+A preliminary public-web screen performed on 2026-09-22 did not surface an obvious exact game/software use of **Charterwake** in the searches performed. That is only an initial collision screen, not legal clearance and not a guarantee of registrability or non-infringement.
+
+Therefore:
+
+- Charterwake remains a provisional working title;
+- no final logo lock, Steam store publication, trademark filing, paid title-dependent campaign or merchandise should treat it as cleared;
+- the full naming-validation plan still applies before public title lock;
+- the code/data architecture must remain rename-safe.
+
+Historical official UK journal record for the retired title:
 https://www.ipo.gov.uk/t-tmj/tm-journals/2025-031/UK00004235663.html
 
 ---
@@ -234,7 +243,7 @@ https://www.ipo.gov.uk/t-tmj/tm-journals/2025-031/UK00004235663.html
 At every milestone, reviewers must be able to answer:
 
 1. What player problem is this feature solving?
-2. Why does Signalhold need it?
+2. Why does Charterwake need it?
 3. What is structurally different from the closest reference?
 4. Does any name, layout, icon, progression element or composition feel sourced from one identifiable game?
 5. Can its source and license be proven?

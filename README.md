@@ -1,14 +1,14 @@
-# Signalhold: The Last Relay
+# Charterwake: The Last Relay
 
 Compact one-board kingdom/base-building strategy roguelite for Steam.
 
-> **Naming status:** "Signalhold: The Last Relay" is a WORKING TITLE, not a trademark-cleared shipping name. Phase 002 identified an existing UK "Signalhold" trademark application in software-related classes. No Steam page, capsule art, press release, paid campaign, or final logo may present this name as cleared until the naming gate passes.
+> **Naming status:** **Charterwake: The Last Relay** is the current WORKING TITLE. A preliminary public-web screen on 2026-09-22 did not surface an obvious exact game/software use of "Charterwake", but that is not formal trademark clearance. The former working title, "Signalhold: The Last Relay", was retired after Phase 002 identified an existing UK SIGNALHOLD trademark application in software-related classes.
 
 ## Production status
 
 **Current gate:** Phase 002 — Originality boundary and IP safety — COMPLETE
 
-Phase 001 fixed the product charter and scope ceiling. Phase 002 now fixes how the project remains structurally, visually, legally, and commercially distinct from its references.
+Phase 001 fixed the product charter and scope ceiling. Phase 002 fixes how the project remains structurally, visually, legally, and commercially distinct from its references.
 
 ### Phase 001 documents
 
@@ -23,6 +23,7 @@ Phase 001 fixed the product charter and scope ceiling. Phase 002 now fixes how t
 - [Originality Brief](docs/phase-002/ORIGINALITY_BRIEF.md)
 - [IP Checklist](docs/phase-002/IP_CHECKLIST.md)
 - [Naming Validation Plan](docs/phase-002/NAMING_VALIDATION_PLAN.md)
+- [Name Change Decision](docs/phase-002/NAME_CHANGE_2026-09-22.md)
 - [Third-Party Licensing Policy](docs/phase-002/THIRD_PARTY_LICENSING_POLICY.md)
 - [Licensing Register Template](docs/phase-002/LICENSING_REGISTER.csv)
 - [Visual Reference Board Notes](docs/phase-002/VISUAL_REFERENCE_BOARD.md)
@@ -34,7 +35,7 @@ The project follows the authoritative **STEAM GAME NUMBER 2 — Master Productio
 
 ## Locked project identity
 
-- **Working title:** Signalhold: The Last Relay — provisional / not trademark-cleared
+- **Working title:** Charterwake: The Last Relay — provisional / pending full clearance
 - **Genre:** compact one-board kingdom/base-building strategy roguelite
 - **Core promise:** You can see every major threat coming, but your command network can never power everything at once.
 - **Primary platform:** Steam for Windows; Linux and Steam Deck verification before launch

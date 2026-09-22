@@ -1,6 +1,6 @@
 # Phase 001 — Approved Scope Statement
 
-**Project:** Signalhold: The Last Relay  
+**Project:** Charterwake: The Last Relay  
 **Status:** APPROVED BASELINE  
 **Date:** 2026-09-22
 

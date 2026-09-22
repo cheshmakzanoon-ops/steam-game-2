@@ -12,7 +12,7 @@ A phase that adds or changes player-facing mechanics, names, UI, progression, ar
 For each new/changed major mechanic:
 
 - [ ] Closest reference pattern identified.
-- [ ] Signalhold-specific player problem documented.
+- [ ] Charterwake-specific player problem documented.
 - [ ] Structural difference documented.
 - [ ] Difference is visible in actual play, not merely renamed terminology.
 - [ ] Mechanic strengthens or preserves one of the six product pillars.
@@ -35,7 +35,7 @@ For each new/changed major mechanic:
 
 ## 3. Layout/UI
 
-- [ ] UI hierarchy was derived from Signalhold's data/state needs.
+- [ ] UI hierarchy was derived from Charterwake's data/state needs.
 - [ ] No competitor screen was used as a tracing/layout template.
 - [ ] Resource, threat and Command presentation are independently composed.
 - [ ] Icons are project-original or properly licensed.
@@ -91,7 +91,7 @@ For each new/changed major mechanic:
 
 - [ ] No competitor logos/screenshots/capsules.
 - [ ] No "X but better", "spiritual successor", "clone", false affiliation or copied tagline.
-- [ ] Claims describe actual Signalhold features.
+- [ ] Claims describe actual Charterwake features.
 - [ ] Title is not presented as cleared until naming gate passes.
 
 ---
