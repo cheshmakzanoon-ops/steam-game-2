@@ -6,9 +6,9 @@ Compact one-board kingdom/base-building strategy roguelite for Steam.
 
 ## Production status
 
-**Current gate:** Phase 003 — Player promise and emotional arc — COMPLETE
+**Current gate:** Phase 004 — Core rules lock — COMPLETE (preproduction specification and verified examples)
 
-Phases 001–002 lock the product/scope and originality/IP boundaries. Phase 003 now locks what the player must understand, feel, decide, and be able to explain across a complete run.
+Phases 001–003 lock the product, scope, originality and player experience. Phase 004 freezes core-rules v1.0.0 with worked examples and a disposable offline verifier. No playable game, Godot runtime acceptance or final-art completion is claimed.
 
 ### Phase 001 documents
 
@@ -39,6 +39,20 @@ Phases 001–002 lock the product/scope and originality/IP boundaries. Phase 003
 - [Player Stories and Design Requirements](docs/phase-003/PLAYER_STORIES.md)
 - [Phase 003 Acceptance Matrix](docs/phase-003/ACCEPTANCE_MATRIX.md)
 - [Closure Evidence](docs/phase-003/CLOSURE_EVIDENCE.md)
+
+### Phase 004 documents and verification
+
+- [Core Rules v1.0.0](docs/phase-004/CORE_RULES_V1.md)
+- [Decisions, Sources and Question Log](docs/phase-004/DECISIONS_AND_QUESTIONS.md)
+- [Executable Worked Examples](docs/phase-004/rule_examples.json)
+- [Disposable Design Verifier](docs/phase-004/verify_rules.py)
+- [Closure Evidence](docs/phase-004/CLOSURE_EVIDENCE.md)
+
+```sh
+python3 docs/phase-004/verify_rules.py --self-test
+```
+
+No external packages or network are required. This checks pure rule examples, not a shipped game. The next gate is **Phase 005 — Scope budget and content ceiling**.
 
 The project follows the authoritative **STEAM GAME NUMBER 2 — Master Production Prompt and Project Bible** in mandatory phase order. A later phase may not silently widen scope or weaken a prior gate.
 

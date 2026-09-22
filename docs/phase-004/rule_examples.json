@@ -1,0 +1,55 @@
+{
+  "rules_version": "1.0.0",
+  "constants": {"size": 9,"keep_index": 40,"entry_indices": [4,44,76,36],"directions": [[0,-1],[1,0],[0,1],[-1,0]],"priority_order": ["Crown","Charter","Dormant"],"resource_order": ["Supply","Material","Insight"],"capacity": 6,"watches": 15,"boss_watches": [5,10,15],"phases": ["Forecast","Council","Build","Route","Production","Siege","Aftermath"]},
+  "calibration_defaults": {"keep_integrity": 20,"repair_amount": 3,"repair_cost": [1,1,0],"tick_presentation_ms": 100,"notice": "New Phase 004 verification defaults; not bible-prescribed final content balance."},
+  "allocation": [
+    {"id": "A01_exact_capacity","nodes": [{"index": 31,"load": 2,"priority": "Charter","mask": 15},{"index": 39,"load": 2,"priority": "Charter","mask": 15},{"index": 41,"load": 2,"priority": "Charter","mask": 15}],"capacity": 6,"stock": [0,0,0],"expected": [31,39,41]},
+    {"id": "A02_skip_nonfitting_continue","nodes": [{"index": 31,"load": 4,"priority": "Charter","mask": 15},{"index": 39,"load": 3,"priority": "Charter","mask": 15},{"index": 41,"load": 2,"priority": "Charter","mask": 15}],"capacity": 6,"stock": [0,0,0],"expected": [31,41]},
+    {"id": "A03_Crown_before_row_order","nodes": [{"index": 31,"load": 4,"priority": "Charter","mask": 15},{"index": 39,"load": 3,"priority": "Charter","mask": 15},{"index": 41,"load": 2,"priority": "Crown","mask": 15}],"capacity": 6,"stock": [0,0,0],"expected": [41,31]},
+    {"id": "A04_Dormant_conducts","nodes": [{"index": 31,"load": 1,"priority": "Dormant","mask": 15},{"index": 22,"load": 1,"priority": "Charter","mask": 15}],"capacity": 1,"stock": [0,0,0],"expected": [22]},
+    {"id": "A05_unpowered_conducts","nodes": [{"index": 31,"load": 3,"priority": "Charter","mask": 15},{"index": 22,"load": 1,"priority": "Charter","mask": 15}],"capacity": 1,"stock": [0,0,0],"expected": [22]},
+    {"id": "A06_disconnected_zero_load","nodes": [{"index": 0,"load": 0,"priority": "Charter","mask": 15}],"capacity": 0,"stock": [0,0,0],"expected": []},
+    {"id": "A07_connected_zero_load","nodes": [{"index": 31,"load": 0,"priority": "Charter","mask": 15},{"index": 39,"load": 1,"priority": "Charter","mask": 15}],"capacity": 0,"stock": [0,0,0],"expected": [31]},
+    {"id": "A08_disabled_edge","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 15},{"index": 22,"load": 1,"priority": "Charter","mask": 15}],"capacity": 2,"stock": [0,0,0],"expected": [],"cuts": [[31,40]]},
+    {"id": "A09_rotation_loses_connection","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 1,"rotation": 0}],"capacity": 1,"stock": [0,0,0],"expected": []},
+    {"id": "A10_rotation_restores_connection","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 1,"rotation": 2}],"capacity": 1,"stock": [0,0,0],"expected": [31]},
+    {"id": "A11_destroyed_not_connector","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 15,"health": 0},{"index": 22,"load": 1,"priority": "Charter","mask": 15}],"capacity": 2,"stock": [0,0,0],"expected": []},
+    {"id": "A12_upkeep_atomic_failure","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 15,"upkeep": [2,1,0]},{"index": 39,"load": 1,"priority": "Charter","mask": 15}],"capacity": 1,"stock": [1,1,0],"expected": [39],"expected_stock": [1,1,0],"expected_failed": [31]},
+    {"id": "A13_upkeep_paid","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 15,"upkeep": [1,1,0]},{"index": 39,"load": 1,"priority": "Charter","mask": 15}],"capacity": 2,"stock": [1,1,0],"expected": [31,39],"expected_stock": [0,0,0]},
+    {"id": "A14_upkeep_once_after_reallocation","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 15,"upkeep": [1,1,0]}],"capacity": 1,"stock": [0,0,0],"expected": [31],"paid": [31],"expected_stock": [0,0,0]},
+    {"id": "A15_upkeep_failure_latched","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 15,"upkeep": [1,0,0]},{"index": 39,"load": 1,"priority": "Charter","mask": 15}],"capacity": 1,"stock": [9,0,0],"expected": [39],"failed": [31],"expected_stock": [9,0,0],"expected_failed": [31]},
+    {"id": "A16_overload_not_charged_upkeep","nodes": [{"index": 31,"load": 2,"priority": "Charter","mask": 15,"upkeep": [1,0,0]},{"index": 39,"load": 1,"priority": "Charter","mask": 15,"upkeep": [1,0,0]}],"capacity": 1,"stock": [1,0,0],"expected": [39],"expected_stock": [0,0,0]},
+    {"id": "A17_isolation_does_not_charge","nodes": [{"index": 0,"load": 1,"priority": "Charter","mask": 15,"upkeep": [1,0,0]}],"capacity": 2,"stock": [1,0,0],"expected": [],"expected_stock": [1,0,0]}
+  ],
+  "production": [
+    {"id": "P01_forward_chain","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 15,"recipe": {"cost": [0,0,0],"output": [2,0,0]}},{"index": 39,"load": 1,"priority": "Charter","mask": 15,"recipe": {"cost": [1,0,0],"output": [0,1,0]}}],"stock": [0,0,0],"expected_stock": [1,1,0],"expected_failed": []},
+    {"id": "P02_no_backward_retry","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 15,"recipe": {"cost": [1,0,0],"output": [0,1,0]}},{"index": 39,"load": 1,"priority": "Charter","mask": 15,"recipe": {"cost": [0,0,0],"output": [2,0,0]}}],"stock": [0,0,0],"expected_stock": [2,0,0],"expected_failed": [31]},
+    {"id": "P03_output_does_not_fund_upkeep","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 15,"upkeep": [1,0,0],"recipe": {"cost": [0,0,0],"output": [5,0,0]}},{"index": 39,"load": 1,"priority": "Charter","mask": 15,"recipe": {"cost": [0,0,0],"output": [2,0,0]}}],"stock": [0,0,0],"expected_stock": [2,0,0],"expected_failed": []},
+    {"id": "P04_whole_recipe_cost_or_none","nodes": [{"index": 31,"load": 1,"priority": "Charter","mask": 15,"recipe": {"cost": [1,2,0],"output": [0,0,5]}}],"stock": [1,1,0],"expected_stock": [1,1,0],"expected_failed": [31]}
+  ],
+  "damage": [
+    {"id": "D01_armor_then_ward","state": [10,10,2,3,7],"expected": [8,0]},
+    {"id": "D02_armor_absorbs_all","state": [10,10,7,3,5],"expected": [10,3]},
+    {"id": "D03_overkill_clamps_health","state": [2,10,0,1,10],"expected": [0,0]},
+    {"id": "D04_zero_damage","state": [7,10,0,3,0],"expected": [7,3]},
+    {"id": "D05_exact_lethal","state": [3,10,1,2,6],"expected": [0,0]}
+  ],
+  "repair": [
+    {"id": "R01_normal","health": 10,"maximum": 20,"stock": [1,1,0],"expected": [13,[0,0,0]]},
+    {"id": "R02_partial_full_cost","health": 19,"maximum": 20,"stock": [1,1,0],"expected": [20,[0,0,0]]},
+    {"id": "R03_full_health_rejected","health": 20,"maximum": 20,"stock": [1,1,0],"expected": null},
+    {"id": "R04_destroyed_rejected","health": 0,"maximum": 20,"stock": [1,1,0],"expected": null},
+    {"id": "R05_cannot_pay_rejected","health": 10,"maximum": 20,"stock": [1,0,0],"expected": null}
+  ],
+  "outcomes": [
+    {"id": "E01_final_victory","state": [15,1,true,true,false,false],"expected": "VICTORY"},
+    {"id": "E02_simultaneous_Keep_death","state": [15,0,true,true,false,false],"expected": "DEFEAT"},
+    {"id": "E03_boss_fatal_overrides_kill","state": [15,20,true,true,true,false],"expected": "DEFEAT"},
+    {"id": "E04_doctrine_loss_overrides_kill","state": [15,20,true,true,false,true],"expected": "DEFEAT"},
+    {"id": "E05_boss_one_not_run_win","state": [5,20,true,true,false,false],"expected": "ONGOING"},
+    {"id": "E06_boss_two_not_run_win","state": [10,20,true,true,false,false],"expected": "ONGOING"},
+    {"id": "E07_future_wave_not_victory","state": [15,20,true,false,false,false],"expected": "ONGOING"},
+    {"id": "E08_no_final_boss_kill","state": [15,20,false,true,false,false],"expected": "ONGOING"},
+    {"id": "E09_early_Keep_defeat","state": [1,0,false,false,false,false],"expected": "DEFEAT"}
+  ]
+}
