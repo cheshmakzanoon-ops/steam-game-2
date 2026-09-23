@@ -1,0 +1,31 @@
+# Godot caches and generated translation binaries; retain .uid and .import metadata.
+.godot/
+*.translation
+# Local tools, exports and verification output are not source.
+.local-tools/
+build/
+exports/
+artifacts/
+# Blender source belongs in source/template. Temporary render output does not.
+*.blend[0-9]*
+*.blend@
+/art/blender/renders/*
+!/art/blender/renders/.gitkeep
+# Local Python/editor/OS state.
+__pycache__/
+*.py[cod]
+.venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Credentials and crash output must never enter the repository.
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.keystore
+*.dmp
+*.log

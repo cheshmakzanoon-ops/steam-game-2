@@ -1,58 +1,35 @@
 # Charterwake: The Last Relay
 
-Compact one-board kingdom/base-building strategy roguelite for Steam.
+Compact one-board strategy roguelite for Steam. The public title remains provisional.
 
-> **Naming status:** Charterwake: The Last Relay remains a provisional working title pending full public-name clearance.
+## Current state
 
-## Production status
+**Phase 011 — Repository bootstrap: implementation under verification.**
 
-**Current gate:** Phase 010 — Preproduction approval gate — COMPLETE  
-**Decision:** **GO — Phase 011 technical foundation only**
+The repository now has an empty Godot foundation, not a playable game. Open **`game/project.godot`** in the standard **Godot 4.7.2** editor. Running it displays the Phase 011 status message. No gameplay, save/profile data or network service is loaded.
 
-Product-definition/preproduction Phases 001–010 are complete. The baseline is frozen for the bible-required **preproduction-v1** tag.
+[Setup and contribution guide](CONTRIBUTING.md) · [Exact tool pins](toolchain.json) · [Phase 011 task record](docs/phase-011/README.md) · [Bootstrap ADR](docs/architecture/adr-0001-bootstrap.md)
 
-## Phase 010 decision package
+```sh
+python3 tools/verify_bootstrap.py --godot /path/to/godot --check-history --self-test
+```
 
-- [Preproduction gate report](docs/phase-010/PREPRODUCTION_GATE_REPORT.md)
-- [Skeptical player challenge](docs/phase-010/SKEPTICAL_PLAYER_REVIEW.md)
-- [Blender→Godot feasibility report](docs/phase-010/BLENDER_GODOT_FEASIBILITY.md)
-- [Critical unknown disposition](docs/phase-010/CRITICAL_UNKNOWNS.md)
-- [Frozen baseline manifest](docs/phase-010/PREPRODUCTION_BASELINE_MANIFEST.json)
-- [Phase 010 closure evidence](docs/phase-010/CLOSURE_EVIDENCE.md)
+`game/` is the engine project, `art/blender/` contains the future authored-source pipeline, `docs/` keeps design and evidence, and `tools/` contains developer-only verification. Blender 4.5.14 LTS is pinned but not required to open this asset-free foundation. See the contributor guide for Windows commands.
 
-## What GO means
+## Frozen preproduction
 
-Authorized next work:
-- Phase 011 clean repository/bootstrap and empty bootable Godot foundation.
+The immutable `preproduction-v1` tag points to `016c22d2d44be9168627e6045626ab0e097a35e5`. Historical Phase 001–010 files are preserved. Start design work from the [GDD](docs/phase-007/GDD_V1.md), [core rules](docs/phase-004/CORE_RULES_V1.md), [scope](docs/phase-005/SCOPE_BUDGET.md), [roadmap](docs/phase-008/DEPENDENCY_GRAPH.md) and [risk criteria](docs/phase-009/KILL_CRITERIA.md).
 
-Not yet claimed:
-- core-loop fun/replayability;
-- public-title clearance;
-- external spending approval;
-- personal full-time runway commitment;
-- Blender↔Godot clean round-trip;
-- runtime performance;
-- demo/market/launch readiness.
+## Existing preproduction checks
 
-## Locked planning headline
-
-- 15 Watches / three Acts
-- 35–50 minute normal run target
-- one principal launch mode and one principal biome/theme
-- 165 planned pre-launch developer-days
-- 75 protected contingency days
-- 18-month safety ceiling
-- offline core game
-- $14.99 remains a working price hypothesis
-
-## Preproduction contract verification
-
-~~~sh
+```sh
 python3 docs/phase-004/verify_rules.py --self-test
 python3 -S docs/phase-005/verify_scope.py --self-test
 python3 -S docs/phase-008/verify_roadmap.py --self-test
 python3 -S docs/phase-009/verify_risks.py --self-test
 python3 -S docs/phase-010/verify_preproduction.py --self-test
-~~~
+```
 
-The next mandatory gate is **Phase 011 — Repository bootstrap**.
+These are preproduction probes, not gameplay runtime tests. [Project rights](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md) remain separate.
+
+Phase 012 owns the development export and ongoing build/CI skeleton. No later phase is complete merely because its directory exists.

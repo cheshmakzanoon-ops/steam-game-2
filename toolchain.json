@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "project_id": "steam-game-2",
+  "bootstrap_version": "0.0.11",
+  "preproduction_tag": "preproduction-v1",
+  "preproduction_commit": "016c22d2d44be9168627e6045626ab0e097a35e5",
+  "godot": {
+    "version": "4.7.2",
+    "channel": "stable",
+    "edition": "standard",
+    "renderer": "gl_compatibility",
+    "release_tag": "4.7.2-stable",
+    "release_url": "https://godotengine.org/download/archive/4.7.2-stable/",
+    "release_api": "https://api.github.com/repos/godotengine/godot-builds/releases/tags/4.7.2-stable"
+  },
+  "blender": {
+    "version": "4.5.14",
+    "channel": "LTS",
+    "release_url": "https://www.blender.org/releases/4-5/",
+    "linux_archive": "https://download.blender.org/release/Blender4.5/blender-4.5.14-linux-x64.tar.xz",
+    "checksums_url": "https://download.blender.org/release/Blender4.5/blender-4.5.14.sha256",
+    "required_to_open_game": false,
+    "pipeline_acceptance_phases": [19, 20]
+  },
+  "verification": {"python_minimum": "3.10", "python_packages": [], "git_required": true},
+  "runtime_plugins": [],
+  "mandatory_online_services": []
+}
