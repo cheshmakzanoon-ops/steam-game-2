@@ -93,9 +93,13 @@ jobs:
               with tarfile.open(ba) as tf: tf.extractall(tool_dir,filter='data')
               blender=tool_dir/bn.removesuffix('.tar.xz')/'blender'
               bv=subprocess.check_output([str(blender),'--version'],text=True).strip()
-              if bv.splitlines()[0]!='Blender '+m['blender']['version']:
-                  raise RuntimeError('Wrong Blender version')
-              report['blender']={'version':bv,'archive':bn,'sha256':bd}
+              print(bv)
+              expression="import bpy,json; print('BLENDER_VERSION_JSON='+json.dumps(list(bpy.app.version)))"
+              probe=subprocess.check_output([str(blender),'--background','--factory-startup','--python-expr',expression],text=True,timeout=120)
+              values=[json.loads(line.split('=',1)[1]) for line in probe.splitlines() if line.startswith('BLENDER_VERSION_JSON=')]
+              if values!=[[int(part) for part in m['blender']['version'].split('.')]]:
+                  raise RuntimeError('Wrong Blender numeric version: '+repr(values))
+              report['blender']={'version':bv,'numeric_version':values[0],'archive':bn,'sha256':bd}
           else:
               report['blender']={'execution':'Not required on Windows for this asset-free bootstrap; Linux validates the authoring pin.'}
           (evidence/'tool-versions.json').write_text(json.dumps(report,indent=2)+'\n')
