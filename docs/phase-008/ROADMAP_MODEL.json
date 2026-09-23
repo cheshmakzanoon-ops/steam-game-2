@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "phase": 8,
+  "project": "Charterwake: The Last Relay",
+  "entry_commit": "0910d58e44f4fec9255c30cb230ae586f0d4d1f4",
+  "staffing": {
+    "owner": "solo_generalist",
+    "nominal_week_hours": 40,
+    "project_focus_fraction": 0.8,
+    "effective_project_hours_per_week": 32,
+    "permanent_staff": 0,
+    "agent_multiplier": 1,
+    "external_specialists": "bounded_optional_only"
+  },
+  "capacity": {
+    "target_months": 15,
+    "safety_ceiling_months": 18,
+    "productive_prelaunch_hours": 1920,
+    "productive_prelaunch_dev_days": 240,
+    "planned_prelaunch_hours": 1320,
+    "planned_prelaunch_dev_days": 165,
+    "unallocated_contingency_hours": 600,
+    "unallocated_contingency_dev_days": 75,
+    "postlaunch_planned_hours": 80,
+    "postlaunch_planned_dev_days": 10
+  },
+  "contingency_blocks": [
+    {
+      "id": "C1",
+      "name": "foundation_recovery",
+      "dev_days": 8,
+      "window": "M2-M3"
+    },
+    {
+      "id": "C2",
+      "name": "prototype_vertical_slice_rework",
+      "dev_days": 10,
+      "window": "M3-M5"
+    },
+    {
+      "id": "C3",
+      "name": "content_art_throughput_rework",
+      "dev_days": 20,
+      "window": "M6-M9"
+    },
+    {
+      "id": "C4",
+      "name": "reliability_demo_recovery",
+      "dev_days": 15,
+      "window": "M9-M12"
+    },
+    {
+      "id": "C5",
+      "name": "release_reserve",
+      "dev_days": 22,
+      "window": "M12-M15"
+    }
+  ],
+  "milestones": [
+    {
+      "phase": 10,
+      "id": "preproduction_approval"
+    },
+    {
+      "phase": 20,
+      "id": "foundation_calibration"
+    },
+    {
+      "phase": 30,
+      "id": "prototype"
+    },
+    {
+      "phase": 40,
+      "id": "vertical_slice"
+    },
+    {
+      "phase": 70,
+      "id": "gamefeel_art_pipeline"
+    },
+    {
+      "phase": 90,
+      "id": "reliability"
+    },
+    {
+      "phase": 100,
+      "id": "demo"
+    },
+    {
+      "phase": 107,
+      "id": "feedback_review"
+    },
+    {
+      "phase": 110,
+      "id": "content_lock"
+    },
+    {
+      "phase": 111,
+      "id": "alpha"
+    },
+    {
+      "phase": 112,
+      "id": "beta"
+    },
+    {
+      "phase": 114,
+      "id": "release_candidate"
+    },
+    {
+      "phase": 116,
+      "id": "launch"
+    },
+    {
+      "phase": 120,
+      "id": "final_acceptance"
+    }
+  ],
+  "stop_reviews": [
+    {
+      "phase": 10,
+      "id": "preproduction_go_no_go"
+    },
+    {
+      "phase": 30,
+      "id": "core_loop_go_cut_pivot"
+    },
+    {
+      "phase": 40,
+      "id": "combat_vertical_slice_go_cut_pivot"
+    },
+    {
+      "phase": 70,
+      "id": "production_throughput_review"
+    },
+    {
+      "phase": 100,
+      "id": "demo_go_no_go"
+    },
+    {
+      "phase": 107,
+      "id": "market_feedback_go_cut_pivot"
+    },
+    {
+      "phase": 112,
+      "id": "beta_shipability_review"
+    },
+    {
+      "phase": 114,
+      "id": "release_candidate_go_no_go"
+    }
+  ],
+  "burndown": {
+    "unit": "acceptance_weight_points",
+    "total_points": 700,
+    "prelaunch_points": 660,
+    "baseline_accepted_points_through_phase_008": 29,
+    "rule": "points burn only after phase acceptance evidence is merged to main; time spent earns zero partial credit"
+  }
+}
