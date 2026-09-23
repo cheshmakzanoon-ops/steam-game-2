@@ -29,7 +29,9 @@ Python 3.10 or newer and Git are needed for the repository checks, not for runni
 
 The verifier fails for missing files, invalid manifest, wrong engine version, unsupported runtime plugins/services, altered frozen-tag target or modified historical phase packages. `--static-only` is explicitly incomplete: it validates files without claiming engine execution. `--self-test` corrupts disposable copies and confirms rejection; it never edits your real project.
 
-For a graphical check, add `--visual --capture /absolute/path/outside/game/boot.png`. The check opens the GUI editor briefly and captures the scene using the rendering driver. Linux headless machines need Xvfb/Mesa for this separate graphical test. The default test uses Godot's headless driver and is not evidence of GPU performance.
+For a graphical check, add `--visual --capture /absolute/path/outside/game/boot.png`. The check opens the GUI editor briefly and captures the scene. It explicitly selects Compatibility rendering, disables VSync for the probe, and uses EGL/GLES (`opengl3_es`) on Linux or `opengl3` elsewhere. This changes test launch arguments, not the saved project renderer. The default test uses Godot's headless driver and is not evidence of GPU performance.
+
+A GPU-less Linux runner additionally needs Xvfb and Mesa software drivers. The verification environment installs `mesa-vulkan-drivers`, `vulkan-tools`, `libegl1`, `libegl-mesa0` and `libgles2`, selects its installed `lvp` ICD via `VK_DRIVER_FILES` and `VK_ICD_FILENAMES`, and sets `LIBGL_ALWAYS_SOFTWARE=1` before `xvfb-run`. These are disposable runner settings; do not apply them to a normal desktop unless software rendering is intended. The exact executed workflow is linked from the closure evidence. No graphics warning is hidden or excluded from the checker.
 
 Before a clean import, close Godot and remove only the generated `game/.godot/` directory. Rerun the verifier. For the strongest test, clone into a new directory with no caches and repeat. Do not remove source, `.uid`, `.import` metadata or the frozen tag. An incompatible version must be corrected by installing the pinned tool, not editing expected results.
 
