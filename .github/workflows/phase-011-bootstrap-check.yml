@@ -126,6 +126,13 @@ jobs:
         run: |
           set -euo pipefail
           cd "$SOURCE_ROOT"
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends mesa-vulkan-drivers vulkan-tools
+          icd="$(find /usr/share/vulkan/icd.d -name '*lvp*.json' -print -quit)"
+          test -n "$icd"
+          export VK_DRIVER_FILES="$icd"
+          export VK_ICD_FILENAMES="$icd"
+          dpkg-query -W mesa-vulkan-drivers > "$RUNNER_TEMP/evidence/graphics-driver.txt"
           xvfb-run -a -s '-screen 0 1280x720x24' python tools/verify_bootstrap.py --godot "$GODOT_BIN" --visual --capture "$RUNNER_TEMP/evidence/boot.png" --report "$RUNNER_TEMP/evidence/visual.json"
       - name: Confirm no source changed or leaked generated files
         run: |

@@ -203,8 +203,10 @@ def main() -> int:
                 capture = args.capture.resolve()
                 require(not capture.is_relative_to(ROOT / "game"), "Do not write captures into engine source assets.")
                 capture.parent.mkdir(parents=True, exist_ok=True)
-                report["gui_editor"] = command([binary, "--editor", "--path", str(ROOT / "game"), "--audio-driver", "Dummy", "--quit-after", "60"], ROOT, engine=True).strip()
-                report["visual_probe"] = command([binary, "--path", str(ROOT / "game"), "--audio-driver", "Dummy", "--script", str(ROOT / "tools/bootstrap_probe.gd"), "--", f"--capture={capture}"], ROOT, engine=True).strip()
+                graphics_flags = ["--rendering-method", "gl_compatibility", "--rendering-driver", "opengl3", "--disable-vsync"]
+                report["visual_driver_flags"] = graphics_flags
+                report["gui_editor"] = command([binary, *graphics_flags, "--editor", "--path", str(ROOT / "game"), "--audio-driver", "Dummy", "--quit-after", "60"], ROOT, engine=True).strip()
+                report["visual_probe"] = command([binary, *graphics_flags, "--path", str(ROOT / "game"), "--audio-driver", "Dummy", "--script", str(ROOT / "tools/bootstrap_probe.gd"), "--", f"--capture={capture}"], ROOT, engine=True).strip()
                 require(capture.is_file() and capture.stat().st_size > 0, "Scene capture is missing.")
                 report["capture_sha256"] = hashlib.sha256(capture.read_bytes()).hexdigest()
                 report["visual_executed"] = True
