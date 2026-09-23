@@ -203,7 +203,8 @@ def main() -> int:
                 capture = args.capture.resolve()
                 require(not capture.is_relative_to(ROOT / "game"), "Do not write captures into engine source assets.")
                 capture.parent.mkdir(parents=True, exist_ok=True)
-                graphics_flags = ["--rendering-method", "gl_compatibility", "--rendering-driver", "opengl3", "--disable-vsync"]
+                graphics_driver = "opengl3_es" if sys.platform.startswith("linux") else "opengl3"
+                graphics_flags = ["--rendering-method", "gl_compatibility", "--rendering-driver", graphics_driver, "--disable-vsync"]
                 report["visual_driver_flags"] = graphics_flags
                 report["gui_editor"] = command([binary, *graphics_flags, "--editor", "--path", str(ROOT / "game"), "--audio-driver", "Dummy", "--quit-after", "60"], ROOT, engine=True).strip()
                 report["visual_probe"] = command([binary, *graphics_flags, "--path", str(ROOT / "game"), "--audio-driver", "Dummy", "--script", str(ROOT / "tools/bootstrap_probe.gd"), "--", f"--capture={capture}"], ROOT, engine=True).strip()
