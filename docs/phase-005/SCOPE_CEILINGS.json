@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "phase": 5,
+  "project": "Charterwake: The Last Relay",
+  "rules_version": "1.0.0",
+  "content": {"noncombat_structures":24,"combat_structures":9,"standard_enemies":15,"bosses":3,"doctrines":4,"run_upgrades":45,"systemic_events":24,"oaths":6,"principal_biomes":1,"principal_modes":1},
+  "demo": {"doctrines":1,"total_structures":10,"standard_enemies":6,"bosses":1,"upgrades":12,"events":4,"watches":5,"minutes_min":20,"minutes_max":40},
+  "art": {"authored_visual_sets":220,"allocated_color_frames":389,"hard_color_frame_cap":400,"required_passes_per_frame_cap":5},
+  "text": {"launch_source_words_cap":12000,"demo_source_words_cap":4000,"additional_target_languages_cap":2},
+  "audio": {"cue_identities":76,"variant_recordings":180,"music_pieces_target":5,"music_pieces_cap":7,"unique_music_minutes_cap":24,"stems_per_piece_cap":4},
+  "performance": {"baseline_fps_min":60,"playable_fps_min":30,"process_memory_mb_max":1900,"installed_build_mb_max":1800,"texture_residency_mb_max":512,"graph_rebuild_ms_strict_max":1,"combat_tick_ms_strict_max":2,"scene_transition_seconds_strict_max":3},
+  "cash": {"lean_total_usd":4320,"base_total_usd":12600,"stretch_total_usd":18480,"lean_ceiling_usd":5000,"base_ceiling_usd":15000,"stretch_ceiling_usd":20000,"contingency_fraction":0.20,"living_runway":null,"available_cash":null},
+  "schedule": {"target_months":15,"minimum_target_months":12,"safety_ceiling_months":18,"productive_prelaunch_hours":1920,"allocated_prelaunch_hours":1320,"unallocated_prelaunch_hours":600,"reserve_fraction":0.3125,"twelve_month_reserve_fraction":0.140625},
+  "milestone_phase_ranges": [[1,10],[11,20],[21,30],[31,40],[41,50],[51,60],[61,70],[71,80],[81,90],[91,100],[101,110],[111,116],[117,120]],
+  "protected": ["9x9 one-board identity","scarce Command","transparent forecasts","deterministic simulation","safe saves and recovery","fair-loss explanation","offline play","source and license traceability","accessibility and input parity"]
+}
