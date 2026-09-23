@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "baseline_name": "preproduction-v1",
+  "project": "Charterwake: The Last Relay",
+  "public_name_status": "provisional",
+  "entry_commit": "4e601bec5e3bba2a901bbf64b215bb45fe75b9a0",
+  "decision": "GO_FOUNDATION_ONLY",
+  "next_phase": 11,
+  "phase_closure_blobs": {
+    "001": "8383b59feda12e5ac6b1614edbf04988601613b9",
+    "002": "d860d650df633926326e1407a97e7335cb96dfb2",
+    "003": "dffc35f3644622f9120daecf4061a30b101529eb",
+    "004": "3ab3ff8fc4f1a9ea7553369c9f3bf59894ecfe5c",
+    "005": "ffa3c209af52b2263995a839c53dbc302fbf48ce",
+    "006": "e7af0df7e21a0d77c7aa51d988c5b6ab77dfca50",
+    "007": "9e6c99d097e29dcc15cad1504688300f2a9d39de",
+    "008": "77c781281d19384ceee95f42f61162c0deba0ef2",
+    "009": "4d0014ed0cbef954f300e36b9fc39550e1d16606"
+  },
+  "locked_baselines": {
+    "core_rules_version": "1.0.0",
+    "gdd_version": "1.0",
+    "normal_run_minutes": [
+      35,
+      50
+    ],
+    "watches": 15,
+    "acts": 3,
+    "principal_modes": 1,
+    "principal_biomes": 1,
+    "doctrines": 4,
+    "bosses": 3,
+    "prelaunch_planned_dev_days": 165,
+    "protected_contingency_dev_days": 75,
+    "productive_prelaunch_dev_days": 240,
+    "safety_ceiling_months": 18,
+    "price_hypothesis_usd": 14.99
+  },
+  "conditions": {
+    "external_spending_authorized": false,
+    "full_time_schedule_commitment": false,
+    "personal_runway_stored": false,
+    "public_title_cleared": false,
+    "mandatory_online_dependency": false,
+    "phase_011_authorized": true
+  },
+  "tag_intent": "preproduction-v1"
+}
