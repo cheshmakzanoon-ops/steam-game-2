@@ -4,17 +4,21 @@ Compact one-board strategy roguelite for Steam. The public title remains provisi
 
 ## Current state
 
-**Phase 011 — Repository bootstrap: implementation under verification.**
+**Phase 011 — Repository bootstrap: COMPLETE / GREEN.**
 
-The repository now has an empty Godot foundation, not a playable game. Open **`game/project.godot`** in the standard **Godot 4.7.2** editor. Running it displays the Phase 011 status message. No gameplay, save/profile data or network service is loaded.
+The repository now contains a real, verified empty Godot foundation, not a playable game. Open **`game/project.godot`** in the standard **Godot 4.7.2** editor and press **F5**. It displays the Phase 011 status message. No gameplay, save/profile data, account or network service is loaded.
 
-[Setup and contribution guide](CONTRIBUTING.md) · [Exact tool pins](toolchain.json) · [Phase 011 task record](docs/phase-011/README.md) · [Bootstrap ADR](docs/architecture/adr-0001-bootstrap.md)
+[Setup and contribution guide](CONTRIBUTING.md) · [Exact tool pins](toolchain.json) · [Phase 011 closure](docs/phase-011/CLOSURE_EVIDENCE.md) · [Executed verification results](docs/phase-011/VERIFICATION_RESULTS.json)
 
 ```sh
 python3 tools/verify_bootstrap.py --godot /path/to/godot --check-history --self-test
 ```
 
-`game/` is the engine project, `art/blender/` contains the future authored-source pipeline, `docs/` keeps design and evidence, and `tools/` contains developer-only verification. Blender 4.5.14 LTS is pinned but not required to open this asset-free foundation. See the contributor guide for Windows commands.
+`game/` is the engine project, `art/blender/` contains the future authored-source pipeline, `docs/` keeps design and evidence, and `tools/` contains developer-only verification. Blender 4.5.14 LTS is pinned and its Linux binary version was verified; it is not needed to open this asset-free foundation. See the setup guide for Windows commands.
+
+## Acceptance evidence
+
+[Successful clean-checkout run](https://github.com/cheshmakzanoon-ops/steam-game-2/actions/runs/35859528934): native Windows Server 2025 and Ubuntu 24.04 headless editor/import/main-scene tests, nine rejected invalid cases per OS, cache recovery and clean source status. Linux additionally passed graphical editor launch and scene capture. The temporary acceptance workflow has been removed; its exact source and results remain linked in the closure record. This is not a claim of desktop compatibility, GPU performance, gameplay or exported-build certification.
 
 ## Frozen preproduction
 
@@ -32,4 +36,4 @@ python3 -S docs/phase-010/verify_preproduction.py --self-test
 
 These are preproduction probes, not gameplay runtime tests. [Project rights](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md) remain separate.
 
-Phase 012 owns the development export and ongoing build/CI skeleton. No later phase is complete merely because its directory exists.
+The next gate is **Phase 012 — Build and continuous-integration skeleton**: reproducible development exports and ongoing build checks. No later phase is complete merely because its directory exists.

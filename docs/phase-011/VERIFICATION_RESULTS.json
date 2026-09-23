@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "phase": 11,
+  "status": "PASS",
+  "tested_commit": "777ae6b84562405d63203f0865d50c3e7f021487",
+  "workflow_run_id": 35859528934,
+  "workflow_url": "https://github.com/cheshmakzanoon-ops/steam-game-2/actions/runs/35859528934",
+  "frozen_tag": "preproduction-v1",
+  "frozen_commit": "016c22d2d44be9168627e6045626ab0e097a35e5",
+  "jobs": [
+    {
+      "id": 107176029033,
+      "runner": "ubuntu-24.04",
+      "os": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "python": "3.12.3",
+      "conclusion": "success",
+      "headless_import_boot_probe": "PASS",
+      "cache_recovery": "PASS",
+      "clean_source_status": "PASS",
+      "gui_editor_and_capture": "PASS",
+      "graphics": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2; llvmpipe LLVM 20.1.2; EGL; Xvfb; software rendering",
+      "artifact_id": 10750095141,
+      "artifact_sha256": "e6ecade5b437ad6e262606948353c6571b7426b29f077e47a69c4e248475aea7"
+    },
+    {
+      "id": 107176029415,
+      "runner": "windows-2025",
+      "os": "Windows-2025Server-10.0.26100-SP0",
+      "python": "3.12.10",
+      "conclusion": "success",
+      "headless_import_boot_probe": "PASS",
+      "cache_recovery": "PASS",
+      "clean_source_status": "PASS",
+      "gui_editor_and_capture": "NOT_RUN",
+      "artifact_id": 10748896665,
+      "artifact_sha256": "5c9ff47f4cb5fdd62c035467a37ddb795e5c2ab836c4be86cc9524d28a46e956"
+    }
+  ],
+  "godot_version": "4.7.2.stable.official.ed1daf0bf",
+  "publisher_verified_archives": {
+    "Godot_v4.7.2-stable_linux.x86_64.zip": "cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4",
+    "Godot_v4.7.2-stable_win64.exe.zip": "731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953",
+    "blender-4.5.14-linux-x64.tar.xz": "9ba871ff2ecd36526b77432745980b7e6664ecd0c7ca11c48849073dcfe06da3"
+  },
+  "blender": {"numeric_version": [4, 5, 14], "build_hash": "62c1db4208e8", "factory_startup": "PASS", "production_asset_round_trip": "NOT_RUN_PHASE_019_020"},
+  "negative_checks_rejected_on_each_os": ["wrong patch", "release candidate", "wrong edition", "missing project", "missing scene", "malformed manifest", "missing prescribed directory", "wrong main scene", "online dependency"],
+  "prescribed_leaf_directories_verified": 38,
+  "source_sha256": {
+    "game/project.godot": "16ccb78c5215ed89a8a7b227c196dd14b1ef9ecd67d248805a5f147e2ccaa2b3",
+    "game/scenes/boot/boot.tscn": "89b341d0b121a16383dbb1f30ab9dd44d77e987fb78574cc13680269a94e1df8",
+    "toolchain.json": "e5804ee06db21d26ee3a64277cae3c95fdf3eb419fd342d9c6adf2e081fbde39",
+    "tools/bootstrap_probe.gd": "0deb66a9029b68867fc68cb2cd012968be69649760c58e494d1d1b6e5b3b3a60",
+    "tools/verify_bootstrap.py": "7e1c2713ee319130957bc067eeb787ac226197c5c8f2dd803a38e1de56cd120b"
+  },
+  "capture": {"artifact_file": "boot.png", "width": 1280, "height": 720, "sha256": "28394c0afe85421df32fae316d041947bb563bf8c609da57d9826d19289fc367", "visual_review": "Three centered readable status lines; no clipping or error overlay; no gameplay."},
+  "prior_regression_checks": {"phase_004": 1404, "phase_005": 53, "phase_008": 388, "phase_009": 145, "phase_010": 23},
+  "limitations": ["Not desktop Windows 10/11 certification", "Not Steam Deck testing", "Not a performance benchmark", "No saves, gameplay, input-remapping systems or production assets exist", "No exported executable packaging yet", "Run artifacts expire after 14 days; sources and this summary persist"]
+}

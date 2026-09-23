@@ -1,11 +1,17 @@
-# Phase 011 — Repository bootstrap task record
+# Phase 011 — Repository bootstrap
 
-Entry: `0f614ae0f07cad2ac63a6b5126c80ed2b20d2145` on main. Frozen Phase 010 tag: `preproduction-v1` → `016c22d2d44be9168627e6045626ab0e097a35e5`.
+**Status: COMPLETE / GREEN.**
 
-Implementation scope: prescribed directories; empty script-free Godot boot; pinned toolchain; ignore/attributes/editor settings; contributor guide; rights/notices foundation; empty content and generated-asset manifest; clean-clone and adversarial verification.
+The real engine project is `game/project.godot`. Open it with the standard Godot 4.7.2 editor. Its single status scene is deliberately empty of gameplay.
 
-The exact prescribed leaf directories are in [layout.json](layout.json), transcribed from the controlling bible section 10. Do not substitute the older alternate document's `res://autoload` layout.
+Entry: `0f614ae0f07cad2ac63a6b5126c80ed2b20d2145`. Immutable Phase 010 tag: `preproduction-v1` → `016c22d2d44be9168627e6045626ab0e097a35e5`.
 
-Acceptance evidence is recorded in `CLOSURE_EVIDENCE.md` after execution. Until then the implementation is under verification, not a closed phase. No production asset, board, network allocator, combat, save or service is implemented.
+All 38 prescribed leaf directories in [layout.json](layout.json) follow the controlling master-bible section 10, not the alternate older document layout. Blank directory markers are not implemented systems.
 
-Next safe phase after acceptance: Phase 012 — Build and continuous-integration skeleton.
+[Closure and clean-clone record](CLOSURE_EVIDENCE.md) · [Machine-readable executed evidence](VERIFICATION_RESULTS.json) · [Setup guide](../../CONTRIBUTING.md) · [Tool pins](../../toolchain.json)
+
+Actual acceptance covers native Windows Server and Linux headless import/run, cache recovery, nine invalid cases per operating system, clean Git status, and Linux graphical editor/scene capture. It does not certify later gameplay, exports, Steam Deck, performance or Blender production assets.
+
+The temporary acceptance workflow was removed after its successful run; exact historical source and logs are linked in the closure record. Developer verification scripts remain available in `tools/`.
+
+Next safe gate: **Phase 012 — Build and continuous-integration skeleton**.
