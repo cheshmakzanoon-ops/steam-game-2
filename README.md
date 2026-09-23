@@ -6,40 +6,53 @@ Compact one-board kingdom/base-building strategy roguelite for Steam.
 
 ## Production status
 
-**Current gate:** Phase 009 — Risk register and kill criteria — COMPLETE
+**Current gate:** Phase 010 — Preproduction approval gate — COMPLETE  
+**Decision:** **GO — Phase 011 technical foundation only**
 
-Phases 001–009 now establish the product/design case, originality boundary, player-experience contract, exact core rules, scope budget, brand vocabulary, GDD, production roadmap, and formal risk/kill criteria.
+Product-definition/preproduction Phases 001–010 are complete. The baseline is frozen for the bible-required **preproduction-v1** tag.
 
-## Current authoritative entry points
+## Phase 010 decision package
 
-- [GDD v1.0](docs/phase-007/GDD_V1.md)
-- [Phase 008 roadmap](docs/phase-008/DEPENDENCY_GRAPH.md)
-- [Living risk register](docs/phase-009/LIVING_RISK_REGISTER.csv)
-- [Risk scoring policy](docs/phase-009/RISK_SCORING_AND_POLICY.md)
-- [Kill / pivot criteria](docs/phase-009/KILL_CRITERIA.md)
-- [Mitigation schedule](docs/phase-009/MITIGATION_SCHEDULE.md)
-- [Risk review cadence](docs/phase-009/REVIEW_CADENCE.md)
-- [Machine-readable risk model](docs/phase-009/RISK_MODEL.json)
-- [Phase 009 closure evidence](docs/phase-009/CLOSURE_EVIDENCE.md)
+- [Preproduction gate report](docs/phase-010/PREPRODUCTION_GATE_REPORT.md)
+- [Skeptical player challenge](docs/phase-010/SKEPTICAL_PLAYER_REVIEW.md)
+- [Blender→Godot feasibility report](docs/phase-010/BLENDER_GODOT_FEASIBILITY.md)
+- [Critical unknown disposition](docs/phase-010/CRITICAL_UNKNOWNS.md)
+- [Frozen baseline manifest](docs/phase-010/PREPRODUCTION_BASELINE_MANIFEST.json)
+- [Phase 010 closure evidence](docs/phase-010/CLOSURE_EVIDENCE.md)
 
-## Risk-control headline
+## What GO means
 
-- **26 scored living risks**
-- **5 critical / 7 high / 10 medium / 4 low**
-- Formal stop/pivot reviews: Phases **010, 030, 040, 070, 100, 107, 112, 114**
-- Prototype evidence threshold: **8 fresh players**
-- Demo evidence threshold: **12 fresh players**
-- Phase 005 20% reserve and 18-month safety ceiling remain binding
+Authorized next work:
+- Phase 011 clean repository/bootstrap and empty bootable Godot foundation.
 
-## Preproduction verification
+Not yet claimed:
+- core-loop fun/replayability;
+- public-title clearance;
+- external spending approval;
+- personal full-time runway commitment;
+- Blender↔Godot clean round-trip;
+- runtime performance;
+- demo/market/launch readiness.
+
+## Locked planning headline
+
+- 15 Watches / three Acts
+- 35–50 minute normal run target
+- one principal launch mode and one principal biome/theme
+- 165 planned pre-launch developer-days
+- 75 protected contingency days
+- 18-month safety ceiling
+- offline core game
+- $14.99 remains a working price hypothesis
+
+## Preproduction contract verification
 
 ~~~sh
 python3 docs/phase-004/verify_rules.py --self-test
 python3 -S docs/phase-005/verify_scope.py --self-test
 python3 -S docs/phase-008/verify_roadmap.py --self-test
 python3 -S docs/phase-009/verify_risks.py --self-test
+python3 -S docs/phase-010/verify_preproduction.py --self-test
 ~~~
 
-These commands validate preproduction contracts and fixtures, not future gameplay/runtime quality.
-
-The next mandatory gate is **Phase 010 — Preproduction approval gate**.
+The next mandatory gate is **Phase 011 — Repository bootstrap**.
