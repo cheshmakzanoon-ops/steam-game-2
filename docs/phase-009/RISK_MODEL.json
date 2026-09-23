@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "phase": 9,
+  "entry_commit": "cbb41ef5c62c926bd203270da6666dc205b1b504",
+  "scoring": {
+    "probability": {
+      "min": 1,
+      "max": 5
+    },
+    "impact": {
+      "min": 1,
+      "max": 5
+    },
+    "detectability": {
+      "min": 1,
+      "max": 5,
+      "higher_means": "harder_to_detect"
+    },
+    "formula": "probability*impact*detectability",
+    "bands": {
+      "critical_min": 60,
+      "high_min": 40,
+      "medium_min": 20,
+      "low_min": 1
+    }
+  },
+  "prototype": {
+    "cohort_min": 8,
+    "command_thesis_min": 6,
+    "threat_keep_min": 6,
+    "retry_plan_min": 5,
+    "pivot_after_rework_cycles": 2,
+    "c2_max_days": 10
+  },
+  "readability": {
+    "cohort_min": 10,
+    "first_look_min": 8,
+    "first_watch_without_facilitator_min": 8,
+    "inactivity_reason_min": 8,
+    "urgent_scan_median_seconds_max": 2,
+    "critical_accessibility_failures_max": 0
+  },
+  "fair_loss": {
+    "cases_min": 8,
+    "score_min": 14,
+    "category_zero_max": 0,
+    "causal_match_min": 7
+  },
+  "performance_targets": {
+    "baseline_fps_min": 60,
+    "playable_fps_min": 30,
+    "process_memory_mb_max": 1900,
+    "install_mb_max": 1800,
+    "texture_mb_max": 512,
+    "graph_p95_ms_target_strict_max": 1,
+    "combat_p95_ms_target_strict_max": 2,
+    "scene_p95_seconds_target_strict_max": 3
+  },
+  "performance_red_lines": {
+    "sustained_fps_min": 30,
+    "graph_p95_ms_red": 2,
+    "combat_p95_ms_red": 4,
+    "scene_p95_seconds_red": 6,
+    "process_memory_mb_red": 2200,
+    "install_mb_red": 2000
+  },
+  "art_throughput": {
+    "green_dev_days_max": 15,
+    "amber_dev_days_max": 20,
+    "red_above_dev_days": 20,
+    "review_phase": 70
+  },
+  "schedule": {
+    "green_reserve_fraction_min": 0.2,
+    "safety_ceiling_months": 18,
+    "release_reserve_id": "C5"
+  },
+  "demo": {
+    "cohort_min": 12,
+    "complete_without_facilitator_min": 10,
+    "retry_plan_min": 8,
+    "review_phase": 100
+  },
+  "formal_reviews": [
+    10,
+    30,
+    40,
+    70,
+    100,
+    107,
+    112,
+    114
+  ],
+  "register_expected_ids": [
+    "R001",
+    "R002",
+    "R003",
+    "R004",
+    "R005",
+    "R006",
+    "R007",
+    "R008",
+    "R009",
+    "R010",
+    "R011",
+    "R012",
+    "R013",
+    "R014",
+    "R015",
+    "R016",
+    "R017",
+    "R018",
+    "R019",
+    "R020",
+    "R021",
+    "R022",
+    "R023",
+    "R024",
+    "R025",
+    "R026"
+  ]
+}
